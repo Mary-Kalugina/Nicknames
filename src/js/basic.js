@@ -1,8 +1,5 @@
 export default class Validator {
-  constructor() {
-
-  }
-  validateUsername(nickname) {
-   return /^[\A(A-Za-z)(0-9_-@"(\d)\1{2}")\z]$/.test(nickname)
+  /* eslint-disable */   validateUsername(nickname) {
+ /* eslint-disable */     return /^[A-Za-z][A-Za-z0-9_@\-]*[A-Za-z]$/.test(nickname);
   }
 }
