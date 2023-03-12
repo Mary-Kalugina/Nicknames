@@ -9,9 +9,9 @@ describe('Validator', () => {
 
   describe('validateUsername', () => {
     test('returns true for valid username', () => {
-      expect(validator.validateUsername('john_12_doe')).toBe(true);
+      expect(validator.validateUsername('john_12-doe')).toBe(true);
       expect(validator.validateUsername('jane-doe')).toBe(true);
-      expect(validator.validateUsername('johndoe')).toBe(true);
+      expect(validator.validateUsername('john657-_doe')).toBe(true);
     });
 
     test('returns false for invalid username', () => {
